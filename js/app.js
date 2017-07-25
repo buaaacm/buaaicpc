@@ -12,14 +12,14 @@
 
   angular.module('bcpc-rating', ['as.sortable']).controller('main', function($scope) {
     var fileExport, i, k, len, ref, series, team, teamDic, update;
-    $scope.currentRanks = [[4, 9, 2, 1, 10, 6, 3, 8, 5, 7, 11], [2, 4, 3, 1, 10, 5, 6, 7, 8, 11, 9], [10, 3, 4, 1, 11, 5, 6, 8, 2, 7, 9], [2, 6, 3, 1, 10, 4, 7, 8, 5, 9, 11], [5, 3, 4, 8, 7, 6, 10, 9, 1, 2, 11], [2, 8, 4, 1, 11, 6, 5, 9, 3, 10, 7], [1, 3, 5, 10, 9, 7, 2, 8, 6, 4, 11], [6, 1, 3, 2, 8, 5, 11, 9, 7, 4, 10], [1, 3, 7, 4, 5, 2, 10, 8, 6, 11, 9], [2, 3, 6, 1, 9, 7, 5, 10, 8, 10, 4], [3, 1, 2, 9, 6, 10, 7, 11, 8, 5, 4], [3, 6, 2, 4, 10, 5, 1, 11, 7, 9, 8], [1, 8, 3, 2, 9, 4, 6, 11, 5, 7, 10], [6, 3, 2, 1, 8, 10, 7, 11, 4, 5, 9]];
-    $scope.problemCount = [83, 72, 79, 82, 56, 66, 67, 45, 71, 62, 55];
-    $scope.trainingCount = [50, 50, 50, 50, 30, 48, 48, 26, 50, 50, 23];
-    $scope.updatedDate = new Date("Sat Sep 24 2016 19:33:02 GMT+0800 (HKT)");
+    $scope.currentRanks = [];
+    $scope.problemCount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    $scope.trainingCount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    $scope.updatedDate = new Date("Tue Jul 25 2017 14:22:00 GMT+0800 (HKT)");
     $scope.PS = PS;
     $scope.PT = PT;
     series = [];
-    $scope.teamNames = ["TDL", "LovelyDonuts", "ACMakeMeHappier", "null", "sto orz", "QAQ", "ResuscitatedHope", "Veleno", "deticxe", "GG", "The South China Sea"];
+    $scope.teamNames = ["three investigators", "deticxe", "ACMakeMeHappier", "ResuscitatedHope", "sto orz", "Ascender", "#include", "L.I.P", "heynihao", "terminator", "tan90", "tvcr", "TooFarTooClose", "Miscellaneous"];
     teamDic = {};
     ref = $scope.teamNames;
     for (i = k = 0, len = ref.length; k < len; i = ++k) {
