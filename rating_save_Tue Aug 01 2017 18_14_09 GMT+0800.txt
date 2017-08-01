@@ -1,0 +1,7 @@
+$scope.currentRanks = [[1,5,4,6,10,3,8,7,2,9,13,11,12,14]]   
+ 
+ $scope.problemCount = [10,5,6,5,3,6,4,4,8,3,2,3,3,1,0]   
+ 
+ $scope.trainingCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] 
+ 
+ $scope.updatedDate = new Date("Tue Aug 01 2017 18:14:09 GMT+0800")
