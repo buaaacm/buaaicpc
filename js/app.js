@@ -13,10 +13,11 @@
   angular.module('bcpc-rating', ['as.sortable']).controller('main', function($scope) {
     var fileExport, i, k, len, ref, series, team, teamDic, update;
 
-	$scope.currentRanks = [[1,5,4,6,10,3,8,7,2,9,13,11,12,14],[1,3,8,5,13,4,7,6,2,9,10,11,12,14]]   
-	$scope.problemCount = [19,12,9,10,5,12,8,8,15,6,5,6,5,3,0]   
+
+	$scope.currentRanks = [[1,5,4,6,10,3,8,7,2,9,13,11,12,14],[1,3,8,5,13,4,7,6,2,9,10,11,12,14],[1,10,7,4,12,2,9,6,3,5,13,11,8,14]]   
+	$scope.problemCount = [26,17,15,16,7,19,13,14,22,12,7,10,11,3,0]   
 	$scope.trainingCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] 
-	$scope.updatedDate = new Date("Thu Aug 03 2017 18:04:37 GMT+0800")
+	$scope.updatedDate = new Date("Sat Aug 05 2017 17:57:17 GMT+0800")
 
     $scope.PS = PS;
     $scope.PT = PT;
