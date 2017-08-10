@@ -117,12 +117,12 @@
         team = ref1[i];
         team.rating += $scope.problemCount[i] * PS;
         team.rating += $scope.trainingCount[i] * PT;
-        ref2 = series[i].data;
-        for (j = m = 0, len2 = ref2.length; m < len2; j = ++m) {
-          rating = ref2[j];
-          series[i].data[j] += $scope.problemCount[i] * PS;
-          series[i].data[j] += $scope.problemCount[i] * PT;
-        }
+      }
+      ref2 = series[i].data;
+      for (j = m = 0, len2 = ref2.length; m < len2; j = ++m) {
+        rating = ref2[j];
+        series[i].data[j] += $scope.problemCount[i] * PS;
+        series[i].data[j] += $scope.problemCount[i] * PT;
       }
       $scope.result.sort(function(a, b) {
         if (a.rating < b.rating) {
