@@ -13,13 +13,10 @@ angular.module('bcpc-rating', [
 
 .controller 'main', ($scope)->
 
-  $scope.currentRanks = [[4,9,2,1,10,6,3,8,5,7,11],[2,4,3,1,10,5,6,7,8,11,9],[10,3,4,1,11,5,6,8,2,7,9],[2,6,3,1,10,4,7,8,5,9,11],[5,3,4,8,7,6,10,9,1,2,11],[2,8,4,1,11,6,5,9,3,10,7],[1,3,5,10,9,7,2,8,6,4,11],[6,1,3,2,8,5,11,9,7,4,10],[1,3,7,4,5,2,10,8,6,11,9],[2,3,6,1,9,7,5,10,8,10,4],[3,1,2,9,6,10,7,11,8,5,4],[3,6,2,4,10,5,1,11,7,9,8],[1,8,3,2,9,4,6,11,5,7,10],[6,3,2,1,8,10,7,11,4,5,9]]
-
-  $scope.problemCount = [83,72,79,82,56,66,67,45,71,62,55]
-
-  $scope.trainingCount = [50,50,50,50,30,48,48,26,50,50,23]
-
-  $scope.updatedDate = new Date("Sat Sep 24 2016 19:33:02 GMT+0800 (HKT)")
+  $scope.currentRanks = [[1,5,4,6,10,3,8,7,2,9,13,11,12,14],[1,3,8,5,13,4,7,6,2,9,10,11,12,14],[1,10,7,4,12,2,9,6,3,5,13,11,8,14],[2,5,6,1,13,4,3,10,7,11,12,9,8,14],[1,7,3,14,12,4,5,6,2,9,11,8,10,13]]
+  $scope.problemCount = [38,26,25,24,14,29,23,23,33,19,14,18,19,10,0]
+  $scope.trainingCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  $scope.updatedDate = new Date("Thu Aug 10 2017 17:55:19 GMT+0800")
 
   $scope.PS = PS
 
@@ -27,20 +24,7 @@ angular.module('bcpc-rating', [
 
   series = []
 
-  $scope.teamNames = [
-    "TDL"
-  , "LovelyDonuts"
-  , "ACMakeMeHappier"
-  , "null"
-  , "sto orz"
-  , "QAQ"
-  , "ResuscitatedHope"
-  , "Veleno"
-  , "deticxe"
-  , "GG"
-#  , "firebug"
-  , "The South China Sea"
-  ]
+  $scope.teamNames = ["three investigators", "deticxe", "ACMakeMeHappier", "ResuscitatedHope", "sto orz", "Ascender", "#include", "L.I.P", "heynihao", "terminator", "tan90", "tvcr", "TooFarTooClose", "Miscellaneous"];
 
   teamDic = {}
   for team,i in $scope.teamNames
@@ -75,7 +59,7 @@ angular.module('bcpc-rating', [
       team.rating += $scope.trainingCount[i]*PT
       for rating,j in series[i].data
         series[i].data[j] += $scope.problemCount[i]*PS
-        series[i].data[j] += $scope.problemCount[i]*PT
+        series[i].data[j] += $scope.trainingCount[i]*PT
 
     $scope.result.sort(
       (a,b)->
