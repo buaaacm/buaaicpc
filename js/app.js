@@ -121,7 +121,7 @@
         for (j = m = 0, len2 = ref2.length; m < len2; j = ++m) {
           rating = ref2[j];
           series[i].data[j] += $scope.problemCount[i] * PS;
-          series[i].data[j] += $scope.problemCount[i] * PT;
+          series[i].data[j] += $scope.trainingCount[i] * PT;
         }
       }
       $scope.result.sort(function(a, b) {
