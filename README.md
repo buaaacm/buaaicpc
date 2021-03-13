@@ -421,7 +421,7 @@
 
 ## Wiki
 
-待添加。
+地址为：http://wiki.buaaacm.com/
 
 # 举办赛事
 
