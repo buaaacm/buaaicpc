@@ -212,7 +212,7 @@
 - 形式：由集训领导者公开在投影上计算所有人的Rating并更新到github
 - 建议：使用U盘携带集训Rating计算软件
 - Github: https://github.com/buaaacm/buaaicpc
-- 网页：http://buaaacm.github.io/buaaicpc/
+- 网页：https://buaaacm.com/rating.html?type=total
 - 积分计算规则：参考 [TopCoder](http://community.topcoder.com/longcontest/?module=Static&d1=support&d2=ratings)和[CF](http://codeforces.com/blog/entry/102)
 
 ## 集训专题讲解
