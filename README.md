@@ -213,7 +213,7 @@
 - 建议：使用U盘携带集训Rating计算软件
 - Github: https://github.com/buaaacm/buaaicpc
 - 网页：https://buaaacm.com/rating.html?type=total
-- 积分计算规则：参考 [TopCoder](http://community.topcoder.com/longcontest/?module=Static&d1=support&d2=ratings)和[CF](http://codeforces.com/blog/entry/102)
+- 积分计算规则：参考 [AtCoder](https://atcoder.jp/posts/171)
 
 ## 集训专题讲解
 
